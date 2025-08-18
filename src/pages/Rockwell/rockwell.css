@@ -1,0 +1,73 @@
+/* Main container */
+.article-wrapper {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  /* Hero image */
+  .article-hero-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 60%;
+    height: auto;
+  }
+  
+  /* Article content */
+  .article-content {
+    max-width: 750px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  .article-content p {
+    margin-bottom: 1.2rem;
+  }
+  
+  .article-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .article-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .article-content a {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .article-content {
+      padding: 0 2rem;
+    }
+    .article-hero-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 90%;
+        height: auto;
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .article-content {
+      padding: 0 1rem;
+      font-size: 0.95rem;
+    }
+  
+    .article-wrapper {
+      padding: 15px;
+    }
+    .article-hero-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 90%;
+        height: auto;
+      }
+  }
+  

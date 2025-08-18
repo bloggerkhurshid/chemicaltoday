@@ -1,0 +1,56 @@
+/* Advertise With Us Page Styles */
+.advertise-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.advertise-heading h2 {
+    color: #085EAB; /* Keeping the color consistent with the contact section */
+    margin-bottom: 15px;
+}
+
+.advertise-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.advertise-form {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.advertise-form input,
+.advertise-form select,
+.advertise-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    /* Adding a focus style for better user experience */
+    outline: none;
+}
+
+.advertise-form input:focus,
+.advertise-form select:focus,
+.advertise-form textarea:focus {
+    border-color: #085EAB;
+    box-shadow: 0 0 0 2px rgba(187, 36, 49, 0.2);
+}
+
+.advertise-form button {
+    background-color: #085EAB; /* Primary action button styling */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.advertise-form button:hover,
+.advertise-form button:focus {
+    background-color: #004582; /* Slightly darker on hover/focus for feedback */
+}

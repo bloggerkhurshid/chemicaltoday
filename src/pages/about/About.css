@@ -1,0 +1,38 @@
+.about-container {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 8px;
+    color: #333; /* Dark grey text for better readability */
+    font-size: 14px;
+    width: 80%;
+}
+
+.about-container h1, .about-container h2 {
+    color: #085EAB; /* Red color for headings to match the logo */
+}
+
+.about-container p, .about-container ul {
+    color: #666; /* Medium grey for paragraph and list text */
+    line-height: 1.6;
+}
+
+.about-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-container li {
+    margin-bottom: 10px;
+}
+
+/* Additional styles for links or any other elements that might benefit from the logo colors */
+.about-container a {
+    color: #085EAB; /* Red color for links to match the logo */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+.about-container a:hover {
+    text-decoration: underline; /* Adds underline on hover for better user interaction feedback */
+}

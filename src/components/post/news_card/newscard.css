@@ -1,0 +1,71 @@
+.news-card {
+  display: block;
+  text-decoration: none;
+  color: inherit; /* Ensure text colors inherit from the card, not the link */
+  height: max-content;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for transform and shadow */
+  box-shadow: 0 4px 8px rgba(154, 152, 152, 0.1); /* Adds shadow for popping effect */
+  border: 1px solid #ccc; /* Adds a subtle border */
+  min-width: 300px; /* Ensures that the card does not shrink below 250px in width */
+
+}
+.news-all-text {
+  padding-left: 10px;
+}
+
+.news-card:hover {
+  transform: translateY(-5px); /* Lifts the card slightly */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds shadow for popping effect */
+  border: 1px solid #ccc; /* Adds a subtle border */
+}
+  .news-cards {
+    display: flex; /* Example using flexbox */
+    flex-wrap: wrap; /* Allows cards to wrap to next line */
+    gap: 25px; /* Adds space between cards both horizontally and vertically */
+  }
+  .news-card-image {
+    width: 100%;
+    /* width : 330px; */
+    height: 200px;
+    display: block; /* Prevent default image inline behavior */
+    object-fit: fill; /* Cover the area without losing aspect ratio */
+  }
+
+.news-img-text {
+  background-color: #085EAB; /* Red background for the title */    
+  color: #fff; /* White text color */
+    padding: 10px; /* Adjust padding as needed */
+    margin: 0; /* Ensure no default margin */
+    width: max-content;
+}
+
+
+.news-overlay-text{
+    white-space: pre-wrap;
+    line-height: 18px;
+    font-size: 1rem;
+    padding-top: 5px;
+    font-weight: 540;
+    /* margin-bottom: 10px; */
+    color: black;
+    overflow: hidden; /* Add this line */
+    text-overflow: ellipsis; /* Add this line */
+    max-width: 100%; /* Add this line */
+    max-height: 3.6em; /* Add this line */
+}
+/* Ensure the title sticks to the image bottom by removing any spacing between them */
+.news-card-image + .news-img-text {
+    margin-top: -5px; /* Adjusts to pull the title up to touch the image bottom */
+}
+
+/* Adjustments & Customization */
+.news-text {
+    font-size: 1em; /* Adjust text size as needed */
+    margin: 0; /* Remove margin */
+}
+
+/* Ensures that the title and content text are properly aligned */
+.news-img-text, .news-overlay-text {
+    text-align: left; /* Aligns text to the left */
+    word-break: break-word; /* Ensures long words don't overflow */
+}

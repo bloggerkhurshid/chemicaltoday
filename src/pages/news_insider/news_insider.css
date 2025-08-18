@@ -1,0 +1,5 @@
+.news-insider-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}

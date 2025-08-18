@@ -1,0 +1,115 @@
+
+
+/* Utility classes for common styling */
+.ev-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cover-post-items-events {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* flex-grow: 1; */
+    column-gap: 35px;
+}
+
+.ev-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.ev-events-header {
+    background-color: purple;
+    color: white;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ev-webinar-info h1, .ev-webinar-info h3, .ev-webinar-info h4 {
+    margin: 10px 0;
+}
+
+.ev-event-images {
+    display: flex;
+    gap: 15px;
+}
+
+.ev-event-image-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Upcoming events styles */
+.ev-upcoming-events {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.ev-events-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.ev-event-item {
+    flex-basis: calc(50% - 15px - 2*30px); /* Subtract gap and padding */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    font-family: 'Helvitica';
+}
+
+.ev-event-item:hover {
+    transform: translateY(-5px);
+}
+
+.ev-event-item.active {
+    background-color: purple;
+}
+
+/* Event details styles */
+.ev-event-details {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.ev-details-content, .ev-details-image {
+    flex: 1;
+    padding-left: 25px;
+    font-family: 'Helvitiva';
+    font-size: 12px;
+}
+
+.ev-details-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.centered-link {
+    display: block;
+    text-align: center;
+}
+
+
+.event-overlay-text{
+    font-weight: bold;
+}

@@ -1,0 +1,58 @@
+/* EventDetails.css */
+.event-details {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.event-header {
+    display: flex;
+    /* justify-content: center; Centers the children horizontally */
+    align-items: center; /* Aligns children vertically in the center */
+   
+}
+
+.event-image {
+    width: 400px;
+    height: 200px;
+    margin-right: 50px; /* Increased margin for clearer separation */
+    border: thin solid black; /* Adds a 3px solid black border around the image */
+
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    width: 50%; /* Ensure it doesn't grow beyond half of its parent's width */
+    max-width: 500px; /* Optional: prevent it from becoming too wide on larger screens */
+}
+
+.event-description {
+    clear: both;
+    padding-top: 20px; /* Adds space between the header and description */
+    font-size: medium;
+}
+.subheading-description {
+    clear: both;
+    padding-top: 10px; /* Adds space between the header and description */
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+
+
+/* Media Query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .event-header {
+        flex-direction: column;
+    }
+
+    .event-image {
+        margin-right: 0; /* Remove the right margin */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .event-info {
+        width: 100%; /* Take full width on small screens */
+    }
+}

@@ -1,0 +1,72 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.app {
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.employee-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.employee-name {
+  font-size: 1.2rem;
+  margin: 8px 0 4px 0;
+  color: #333;
+}
+
+.employee-designation {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .employee-img {
+    height: 180px;
+  }
+}

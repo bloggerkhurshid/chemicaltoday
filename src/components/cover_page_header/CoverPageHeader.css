@@ -1,0 +1,492 @@
+/* and (max-width: 1530px) */
+/* Additional styles for dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #085EAB;
+    min-width: 600px; /* Adjust based on total width of three columns */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0; /* Align with the start of the parent element */
+    top: calc(100%); /* This positions the dropdown 20px below the link */
+
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #085EAB; /* Change background on hover within dropdown */
+
+}
+
+/* Keep your existing styles for .dropdown-content */
+
+
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #085EAB;
+    min-width: 100px; /* Adjust based on total width of three columns */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    left: 0; /* Align with the start of the parent element */
+    top: calc(100%); /* This positions the dropdown 20px below the link */
+
+}
+
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup label {
+    margin-top: 10px;
+}
+
+.popup input {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    .header {
+        background-color: white;
+        width: 100%;
+        border: 0px;
+        margin: 0px;
+        padding-bottom: 22px;
+        font-size: 1rem;
+        margin-bottom: 22px;
+    }
+
+    .readMoreTest {
+        font-family: 'Helvitica';
+
+        margin: 8px 0px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        display: flex;
+        align-self: center;
+        color: #000;
+        width: 8rem;
+        text-wrap: wrap;
+        line-height: 1.3rem;
+        padding: 20px 18px 5px 0px;
+        padding-right: 20px;
+    }
+
+    .text-info {
+        margin: auto;
+        text-align: center;
+        padding: 5px 22px;
+        color: #FFF;
+        border-radius: 8px;
+        background-color: #575353;
+        font-size: 14px;
+    }
+
+    .insights-menu-item {
+        color: #000;
+        text-wrap: nowrap;
+        line-height: 2.2rem;
+    }
+
+    .logo {
+        width: 285px;
+        height: 120px;
+        margin: 50px 0px 30px;
+        display: flex;
+    }
+
+    .item {    background-color: #085EAB; /* Sets the dropdown background color */
+
+        color: white; /* Sets the text color */
+        text-decoration: none; /* Removes underline from links */
+        padding: 10px 20px; /* Example padding */
+        display: block; /* Makes the padding clickable */
+        font-family:  Helvetica;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .insideitem {    background-color: #085EAB; /* Sets the dropdown background color */
+
+        color: white; /* Sets the text color */
+        text-decoration: none; /* Removes underline from links */
+        padding: 10px 5px; /* Example padding */
+        display: block; /* Makes the padding clickable */
+        font-family:  Helvetica;
+        font-size: 16px;
+        font-weight: 500;
+        text-wrap: nowrap;
+    }
+
+    .header-util-btn {
+        text-decoration: none;
+        font-family: 'Helvitica';
+        text-wrap: nowrap;
+        color: #000;
+        border: 1px solid #000;
+        display: flex;
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        align-items: center;
+        border-color: #000;
+        margin-bottom: 12px;
+        justify-content: center;
+        font-weight: 600;
+
+    }
+
+    .magazineCoverImg {
+        width: 132px;
+        height: 162px;
+        padding: 30px 30px 0px 0px;
+    }
+
+
+    .header-divider {
+        border: 1px solid white;
+        margin-right: 20px;
+        margin-top: 32px;
+        height: 130px;
+        opacity: 0.7;
+    }
+
+    .read-more-button {
+        font-family: 'Helvitica';
+
+        color: #000;
+        width: max-content;
+        display: flex;
+        font-weight: 600;
+        margin-top: 10px;
+        border: 1px solid #000;
+        justify-content: center;
+        height: 35px;
+        align-items: center;
+        padding: 0 6px;
+        font-size: 0.8rem;
+    }
+
+    .navigation {
+        background-color: #085EAB; /* Sets the background color of the whole row */
+        display: flex; /* Assuming it's a flex container */
+        padding: 10px 0; /* Example padding */
+        justify-content: center; /* Centers the navigation items horizontally */
+
+    }
+
+    .logo-container {
+        height: 58%;
+        display: flex;
+    }
+
+}
+
+
+
+.header-top {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-info {
+    opacity: 1;
+}
+
+.header-info-container{
+    margin-left: 0;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+.header-info {
+    display: flex;
+    margin: 0 60px;
+    padding-top: 8px;
+}
+
+.item:hover, .item.active {
+    background-color: #085EAB; /* Changes background on hover or when active */
+}
+
+
+
+.insideitem:hover, .insdieitem.active {
+    background-color: #085EAB; /* Changes background on hover or when active */
+    font-weight: bold;
+}
+
+.readMore:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    padding-left: 8px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.header-actions {
+    display: flex;
+    flex-direction: row;
+    height: 65%;
+}
+
+.header-btn {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.read-more {
+    padding-top: 10px;
+}
+
+.header-util-btn:hover {
+    cursor: pointer;
+    color: #085EAB;
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.read-more-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    color: #085EAB;
+    font-weight: bold;
+}
+
+.insights-menu {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.dropdown-container {
+    padding: 2rem 8rem;
+}
+
+.insights-menu-item {
+    color: #000;
+    text-wrap: nowrap;
+}
+
+.insights-menu-item:hover {
+    color: #089090;
+}
+
+
+
+.scroll-link {
+   color: white;
+   text-decoration: none;
+
+   
+}
+
+
+
+.scroll-container {
+    position: relative;
+    width: 100%; /* Adjust as necessary */
+    overflow-x: hidden;
+    height: 30px; /* Example height, adjust as needed */
+
+}
+.highlight-text {
+    font-weight: bold;
+    /* Positioning to make it appear aligned with scrollable content */
+    position: absolute;
+    left: 0;
+    /* Add other styles here to highlight the text */
+    color: white; /* Example: Red color for visibility */
+    z-index: 2; /* Ensures it's above the scrollable content */
+    background-color:  #089090; /* Background to overlay scrollable text */
+    padding-right: 10px; /* Optional, for spacing between this text and scrollable content */
+}
+.scroll-content {
+    display: inline-block;
+    animation: scroll linear infinite;
+    animation-duration: 0.5s;
+    margin-left: 150px; /* Adjust based on the width of the highlight-text to prevent overlap */
+
+}
+
+.scroll-item {
+    display: inline-block;
+    padding: 0 50px; /* Adjust spacing between items */
+    white-space: nowrap; /* Ensures text within items wraps properly */
+
+}
+
+/* Adjust the '10s' to control the speed of the scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* This creates the infinite effect */
+    }
+}
+
+
+
+
+.header-info2 {
+    opacity: 1;
+}
+
+.header-info-container2{
+    margin-left: 0;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+.header-info2 {
+    display: flex;
+    margin: 0 60px;
+    padding-top: 8px;
+}
+.text-info2 {
+    margin: auto;
+    text-align: center;
+    padding: 5px 22px;
+    color: #FFF;
+    border-radius: 8px;
+    background-color: #089090;
+    font-size: 14px;
+}
+.scroll-container2 {
+    position: relative;
+    width: 100%; /* Adjust as necessary */
+    overflow: hidden;
+    height: 30px; /* Example height, adjust as needed */
+white-space: nowrap;
+}
+
+.scroll-content2 {
+    display: inline-block;
+    animation: scroll 100s linear infinite;
+    animation-duration: 10s;
+    margin-left: 150px; /* Adjust based on the width of the highlight-text to prevent overlap */
+
+}
+.scroll-item2 {
+    display: inline-block;
+    padding: 0 20px; /* Adjust spacing between items */
+    white-space: normal; /* Ensures text within items wraps properly */
+
+}
+
+.scroll-link2 {
+    color: white;
+    text-decoration: none;
+ 
+    
+ }
+
+
+ .scroll-container2 {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scroll-content2 {
+    display: inline-block;
+    animation: scroll 50s linear infinite;
+}
+
+
+
+/* Adjust the '10s' to control the speed of the scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* This creates the infinite effect */
+    }
+}
+
+
+/* Media Queries for Mobile Phones */
+@media (max-width: 480px) {
+    .logo {
+        width: 80%; /* Larger logo for visibility on small screens */
+    }
+
+    .magazineCoverImg {
+        width: 90%; /* Makes the image more prominent */
+    }
+
+    .top-stories-bar {
+        display: none; /* Hide scrolling marquee to save space */
+    }
+
+    .item, .insideitem {
+        padding: 12px 10px; /* Larger tap areas for links */
+        font-size: 14px; /* Larger font for readability */
+    }
+}

@@ -1,0 +1,60 @@
+.post-card {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Ensure text colors inherit from the card, not the link */
+    
+
+  }
+
+  .post-cards {
+    display: flex; /* Example using flexbox */
+    flex-wrap: wrap; /* Allows cards to wrap to next line */
+    gap: 50px; /* Adds space between cards both horizontally and vertically */
+  }
+  .post-card-image {
+    width: 100%;
+    /* width : 330px; */
+    height: 200px;
+    display: block; /* Prevent default image inline behavior */
+    object-fit: fill; /* Cover the area without losing aspect ratio */
+  }
+
+.img-text {
+    background-color: #085EAB; /* Red background for the title */
+    color: #fff; /* White text color */
+    padding: 10px; /* Adjust padding as needed */
+    margin: 0; /* Ensure no default margin */
+    width: max-content;
+}
+
+
+.overlay-text{
+    white-space: pre-wrap;
+    line-height: 18px;
+    font-size: 1rem;
+    padding-top: 5px;
+    font-weight: 540;
+    /* margin-bottom: 10px; */
+    color: black;
+    overflow: hidden; /* Add this line */
+    text-overflow: ellipsis; /* Add this line */
+    max-width: 100%; /* Add this line */
+    max-height: 3.6em; /* Add this line */
+    text-align: justify;
+}
+/* Ensure the title sticks to the image bottom by removing any spacing between them */
+.post-card-image + .img-text {
+    margin-top: -5px; /* Adjusts to pull the title up to touch the image bottom */
+}
+
+/* Adjustments & Customization */
+.text {
+    font-size: 1em; /* Adjust text size as needed */
+    margin: 0; /* Remove margin */
+}
+
+/* Ensures that the title and content text are properly aligned */
+.img-text, .overlay-text {
+    text-align: left; /* Aligns text to the left */
+    word-break: break-word; /* Ensures long words don't overflow */
+}

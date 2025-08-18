@@ -1,0 +1,12 @@
+/* src/pages/PdfViewer/PdfViewer.css */
+.controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 10;
+}

@@ -1,0 +1,48 @@
+/* ChemicalTodayTV.css */
+
+.ctv-container {
+    font-family: 'Helvitica';
+    font-size: medium;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; /* White background to keep it simple and clean */
+    color: #333; /* Dark grey text for better readability */
+    border-radius: 10px; /* Slightly rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Max width to ensure content is not too stretched on larger screens */
+}
+
+.ctv-logo {
+    max-width: 200px; /* Adjust according to your logo's dimensions */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 20px; /* Center the logo and add space between logo and title */
+}
+.ctv-container h1, .ctv-container h2 {
+    color:#085EAB ; /* Bright blue color for headings to grab attention */
+    margin-bottom: 16px;
+}
+
+.ctv-container p {
+    line-height: 1.6; /* Improve readability by increasing line height */
+    margin-bottom: 16px; /* Spacing after paragraphs */
+    color: #555; /* Slightly lighter text color for paragraphs */
+}
+
+/* Additional styles for specific elements or interactions */
+.ctv-container a {
+    color: #007BFF; /* Match links to the heading color for consistency */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.ctv-container a:hover {
+    text-decoration: underline; /* Add underline on hover for better interaction feedback */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ctv-container {
+        padding: 15px;
+        margin: 15px;
+        width: auto; /* Adjust width and padding for smaller screens */
+    }
+}
