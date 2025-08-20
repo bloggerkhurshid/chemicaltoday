@@ -79,6 +79,7 @@ export const FooterConstants = {
   contactUs: "Contact Us",
   termsAndCond: "Terms And Conditions",
   privacyPolicy: "Privacy Policy",
+  associatePartner: "Associate Partners",
   copyright: "Copyright © 2024 Chemical Today",
 };
 

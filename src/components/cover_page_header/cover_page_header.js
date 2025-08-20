@@ -364,9 +364,6 @@ const CoverPageHeader = () => {
               <Link to={`/Case Studies/1`} className="insideitem">
                 Case Studies
               </Link>
-              <Link to={"/White Papers/1`"} className="insideitem">
-                White Papers
-              </Link>
               <Link to={"/R&D/1"} className="insideitem">
                 R&D
               </Link>
@@ -379,10 +376,21 @@ const CoverPageHeader = () => {
               <Link to={"/Plant Visit/1"} className="insideitem">
                 Plant Visit
               </Link>
-              {/* <Link to={'featured-management'} className='insideitem'></Link> */}
-              <Link to={`/Management/1`} className="insideitem">
+
+              <div className="insideitem dropdown3">
                 Management
-              </Link>
+                <div className="dropdown-content3">
+                  <Link to={`/National/1`} className="insideitem">
+                    National
+                  </Link>
+                  <Link to={`/International/1`} className="insideitem">
+                    International
+                  </Link>
+                  <Link to={`/Equipment/1`} className="insideitem">
+                    Equipment
+                  </Link>
+                </div>
+              </div>
             </div>
           </Link>
 
@@ -392,14 +400,14 @@ const CoverPageHeader = () => {
           <Link to={"/events"} className="item">
             Events
           </Link>
-          <Link to={"/Equipments/1"} className="item">
-            Equipment
+          <Link to={"/White Papers/1"} className="item">
+            White Papers
           </Link>
-          <Link to={"/Sustainability/1"} className="item">
-            Sustainability
+          <Link to={"/Logistics/1"} className="item">
+            Logistics
           </Link>
-          <Link to={"/Digitalization/1"} className="item">
-            Digitalization
+          <Link to={"/Safety/1"} className="item">
+            Safety
           </Link>
           <Link to={"/search"} className="item search-icon">
             <FontAwesomeIcon icon={faSearch} />

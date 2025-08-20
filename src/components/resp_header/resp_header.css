@@ -1,0 +1,17 @@
+.mega-dropdown .dropdown-menu {
+  width: 800px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mega-dropdown .dropdown-columns {
+  display: flex;
+  width: 100%;
+}
+
+.mega-dropdown .column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

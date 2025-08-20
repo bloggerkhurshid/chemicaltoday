@@ -29,7 +29,7 @@ const Drawer = ({ headerHeight, onOverlayClicked }) => {
             <Link to={"/events"} onClick={onOverlayClicked}>
               Events
             </Link>
-            <Link to={"/equipment"} onClick={onOverlayClicked}>
+            <Link to={"/equipments"} onClick={onOverlayClicked}>
               Equipment
             </Link>
             <Link to={"/sustainability"} onClick={onOverlayClicked}>

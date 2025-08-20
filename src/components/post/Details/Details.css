@@ -1,192 +1,83 @@
-.details-insider-type {
-    background-color: #FF0000;
-    color: #FFF;
-    height: 35px;
-    display: flex;
-    width: fit-content;
-    margin: 0px;
-    align-items: center;
-    padding: 0px 20px;
-}
-
-.detail-insider-title {
-    font-size: 30px;
-    line-height: 44px;
-    font-weight: 600;
-    margin-top: 18px;
-    margin-bottom: 20px;
-}
-
-.detail-info {
-    display: flex;
-    border: 1px solid black;
-    flex-direction: row;
-    justify-content: space-between;
-    /* padding: 10px 10px; */
-    padding-left: 10px;
-    font-weight: bold;
-    margin: 15px 0px;
-}
-
-.detail-title {
-    font-size: 35px;
-    margin: 0px;
-    line-height: 45px;
-    padding-bottom: 15px;
-    font-weight: bold;
-}
-
 .detail-img-info {
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
-.detail-share {
-    display: flex;
-    flex-direction: row;
-    padding-right: 25px;
+/* Float image + caption together */
+.float-figure {
+  float: left;
+  max-width: 600px;
+  margin: 0 30px 0 0; /* gap between image and text */
 }
 
-.detail-share > a {
-    color: black;
+.detail-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
 }
 
-.detail-share > a:hover {
-    color: black;
+.image-caption {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 5px;
+  text-align: start;
+}
+
+/* Text flows beside & then below image */
+.detail-insider-title {
+  font-size: 26px;
+  margin-bottom: 15px;
 }
 
 .detail-desc {
-    font-weight: 500;
-    font-size: 16px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
 }
 
-.detail-share-btn {
-    width: 20px;
-    height: 20px;
-    /* background-color: black; */
-    margin: auto;
-    border-radius: 50%;
-    margin-left: 8px;
+/* Date + location */
+.date-location {
+  font-weight: bold;
+  opacity: 0.7;
+  margin-right: 10px; 
+  display: inline;  
 }
 
-.detail-share-btn:hover {
-    cursor: pointer;
-}
-
-.detail-img {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    width:  100%;
-    height: 450px;
+/* Post description styled separately */
+.post-desc {
+  color: #222;         
+  font-weight: normal;  
+  opacity: 1;
 }
 
 
-
-@media screen and (min-width: 1650px) {
-
-    .detail-insider-title {
-        font-size: 36px;
-        line-height: 50px;
-    }
-
-    .detail-info {
-        font-size: 26px;
-        padding: 20px 15px;
-    }
-
-    .detail-title {
-        font-size: 36px;
-        line-height: 45px;
-    }
-
-    .detail-desc {
-        font-weight: 500;
-        font-size: 30px;
-    }
-    
-.detail-img {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    width:  100%;
-    height: 450px;
+/* Footer clears the float */
+.detail-footer {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
 }
 
-
+.footer-logo {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-@media screen and (max-width: 1300px) and (min-width: 1101px) {
-    
-    .detail-insider-title {
-        font-size: 24px;
-        line-height: 36px;
-    }
-
-    .detail-title {
-        font-size: 28px;
-        line-height: 40px;
-    }
-
-    
-.detail-img {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    width:  100%;
-    height: 450px;
+.share-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
+.share-section p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
 }
-
-@media screen and (max-width: 1100px) and (min-width: 950px) {
-    
-    .detail-insider-title {
-        font-size: 20px;
-        line-height: 32px;
-    }
-
-    .detail-title {
-        font-size: 25px;
-        line-height: 36px;
-    }
-
-    .detail-info {
-        font-size: 13px;
-        padding: 8px 10px;
-    }
-
-    .detail-img {
-        margin-top: 20px;
-        margin-bottom: 5px;
-        width:  100%;
-        height: 450px;
-    }
-    
-}
-
-@media screen and (max-width: 950px) {
-
-    .detail-insider-title {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .detail-title {
-        font-size: 25px;
-        line-height: 36px;
-    }
-
-    .detail-info {
-        font-size: 13px;
-        padding: 8px 10px;
-    }
-.detail-img {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    width:  100%;
-    height: fit-content;
-}
-
-}
-
-
-
-

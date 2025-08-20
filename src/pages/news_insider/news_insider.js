@@ -73,14 +73,6 @@ const NewsInsider = () => {
           postDesc={news.content}
           image_caption={news.image_caption}
           country={news.country}
-          latest1={newsComUtils.l1}
-          latest2={newsComUtils.l2}
-          latest3={newsComUtils.l3}
-          latest4={newsComUtils.l4}
-          ad1={newsComUtils.advt1}
-          ad2={newsComUtils.advt2}
-          ad3={newsComUtils.advt3}
-          ad4={newsComUtils.advt4}
           linkpa
         />
       </div>

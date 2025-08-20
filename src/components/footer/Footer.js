@@ -26,7 +26,7 @@ const Footer = () => {
             <p style={{ color: "#000000" }}>{FooterConstants.subscribeInfo}</p>
           </div>
           <div className="subscribe-input">
-            <button style={{ height: "34px" }} onClick={handleSubscribeClick}>
+            <button onClick={handleSubscribeClick}>
               {FooterConstants.subscribe}
             </button>
           </div>
@@ -181,6 +181,51 @@ const Footer = () => {
             </div>
 
             <div className="our-brands">
+              <h5 className="our-brands-heading">Others</h5>
+              <a
+                href="/Articles/1"
+                className="footer-links"
+                style={{ textDecoration: "none" }}
+              >
+                Articles
+              </a>
+
+              <a
+                href="/Inhouse/1"
+                className="footer-links"
+                style={{ textDecoration: "none" }}
+              >
+                Inhouse Articles
+              </a>
+
+              <a
+                href="/Sustainability/1"
+                className="footer-links"
+                style={{ textDecoration: "none" }}
+              >
+                Sustainability
+              </a>
+              <a
+                href="/Digitalization/1"
+                className="footer-links"
+                style={{ textDecoration: "none" }}
+              >
+                Digitalization
+              </a>
+            </div>
+                        <div className="our-brands">
+              <h5 className="our-brands-heading">Partners</h5>
+
+              <a
+                href="/terms-and-conditions"
+                className="footer-links"
+                style={{ textDecoration: "none" }}
+              >
+                {FooterConstants.associatePartner}
+              </a>
+            </div>
+            
+            <div className="our-brands">
               <h5 className="our-brands-heading">Privacy & Terms</h5>
 
               <a
@@ -196,38 +241,6 @@ const Footer = () => {
                 style={{ textDecoration: "none" }}
               >
                 {FooterConstants.privacyPolicy}
-              </a>
-            </div>
-            <div className="our-brands">
-              <h5 className="our-brands-heading">Others</h5>
-              <a
-                href="/Articles/1"
-                className="footer-links"
-                style={{ textDecoration: "none" }}
-              >
-                Articles
-              </a>
-
-              <a
-                href="/Logistics/1"
-                className="footer-links"
-                style={{ textDecoration: "none" }}
-              >
-                Logistics
-              </a>
-              <a
-                href="/Inhouse/1"
-                className="footer-links"
-                style={{ textDecoration: "none" }}
-              >
-                Inhouse Articles
-              </a>
-              <a
-                href="/Safety/1"
-                className="footer-links"
-                style={{ textDecoration: "none" }}
-              >
-                Safety
               </a>
             </div>
           </div>

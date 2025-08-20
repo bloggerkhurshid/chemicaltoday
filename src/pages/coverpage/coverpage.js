@@ -159,7 +159,8 @@ const CoverPage = () => {
                             homepagedata.homeScreenTopSection.post
                               .thumbnail_image_url
                           }
-                          style={{ width: "560px", height: "400px" }}
+                          style={{ width: "100%",
+                            textAlign: "justify", height: "500px", "@media screen and (min-width: 480px)": { height: "240px" } }}
                           className="cover-item-img"
                           alt="Cover"
                         />
@@ -167,7 +168,9 @@ const CoverPage = () => {
                           className="cover-item-text"
                           style={{
                             width: "560px",
+                            marginTop: "10px",
                             wordWrap: "break-word",
+                            textAlign: "justify",
                             overflowWrap: "break-word",
                             maxWidth: "560px",
                           }}
@@ -179,6 +182,7 @@ const CoverPage = () => {
                           )}
                         </h3>{" "}
                       </div>
+
                       <p
                         style={{
                           opacity: "0.7",
@@ -187,9 +191,11 @@ const CoverPage = () => {
                           color: "black",
                           fontFamily: "Helvetica",
                         }}
-                      >
-                        Chemical Today
-                      </p>
+                      > <b>{truncateText(
+                            homepagedata.homeScreenTopSection.post.published_by,
+
+                          )}</b>{" "}
+                      </p>{" "}
                     </a>
                     <div className="w-3 h-5 tab-ads-cont"></div>
                   </div>
@@ -386,9 +392,9 @@ const CoverPage = () => {
                           src={homepagedata?.homeScreenTopSection?.advt2?.image}
                           alt="Advert Banner"
                           style={{
-                            width: "600px",
+                            width: "100%",
                             height: "300px",
-                            objectFit: "contain",
+                            objectFit: "fill",
                           }}
                         />
                       </Link>
